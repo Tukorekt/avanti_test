@@ -22,14 +22,10 @@ linter:
     cancel_subscriptions: true
     close_sinks: true
     unawaited_futures: true
-
-    # Стиль и консистентность
     always_use_package_imports: true
     prefer_final_locals: true
     prefer_final_fields: true
     require_trailing_commas: true
-
-    # Производительность
     prefer_const_constructors: true
     avoid_print: true
     
