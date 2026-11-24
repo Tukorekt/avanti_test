@@ -1,17 +1,36 @@
-# avanti_test
+# Тестовое задание
 
-A new Flutter project.
+Приложение проверено на Android и Web (Chrome).
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Версии окружения:
+Flutter: 3.50.1 (stable)
+Dart: 3.14.0
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Выполненные задания:
+F1 - Выполнено полностью.	
+F2 – Выполнено полностью.	
+F3 – Выполнено полностью.	
+F4 – Выполнено полностью.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Запуск стандартный, анализатор без ошибок, тесты не реализованы
+
+
+Принятые решения:
+
+DI: использованы get_it + injectable.
+
+Архитектура: Clean Architecture + Bloc для State management. Вместо отдельных Use Case применён Interactor, объединяющий несколько сценариев.
+
+Хранение сообщений: история хранится в локальном Storage в памяти. Отправка имитируется асинхронным методом с задержкой 3 секунды (см. chat_repository_mock.dart). Первая попытка для каждого нового сообщения завершается ошибкой, повтор — успехом. Используется clientId для идентификации записи и предотвращения дублей.
+
+Качество кода: соблюдены принципы ООП, SOLID и другие практики чистого кода.
+
+
+Ограничения:
+
+Не реализованы состояние загрузки списка сообщений и состояние ошибки загрузки (по заданию не требовались).
+
+Тема оформления и локализация не настраивались (не входили в обязательные требования).
