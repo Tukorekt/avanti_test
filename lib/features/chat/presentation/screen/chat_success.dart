@@ -88,6 +88,12 @@ class __MessageInputState extends State<_MessageInput> {
   }
 
   @override
+  void dispose() {
+    _textController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Material(
       elevation: 0,
